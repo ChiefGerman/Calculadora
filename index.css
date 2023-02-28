@@ -74,3 +74,27 @@ button:focus{
 #valor-anterior{
     font-size: 2em;
 }
+
+.developer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.texto-animado{
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    padding: 10px;
+    border-radius: 32px;
+
+}
+
+@keyframes anim{
+    0% {background-color: rgb(0, 255, 0);} /*Amarillo*/
+   25% {background-color: #f80;} /*Naranja*/
+   50% {background-color: #000;} /*Negro*/
+   75% {background-color: #f80;} /*Otra vez naranja*/
+  100% {background-color: rgb(0, 255, 0);} /*Otra vez amarillo*/
+}
